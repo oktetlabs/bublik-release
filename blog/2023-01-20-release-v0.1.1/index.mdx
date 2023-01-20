@@ -4,9 +4,91 @@ authors: [ol-limonikas, ol-alexandrapankratova]
 tags: [release]
 ---
 
+import { BrowserWindow } from '../../src/components';
+import myImageUrl from './img/run-diff-page.png';
+
 We are happy to announce **Bublik 0.1.1.**
 
+We've added experimantal support for comparing two runs, new datepicker component with better accessability and keyboard navigation, new page mode for history where you can see values change over time and more.
+
+<!--truncate-->
+
 # Highlights
+
+## Run Diff
+
+:::caution
+
+This feature is experimental and may not work as expected
+
+:::``
+
+In this release we've added experimantal support for comparing two runs
+
+<BrowserWindow>
+  <img src={require('./img/run-diff-page.png').default} alt="Run diff page" />
+</BrowserWindow>
+
+You can now click on two run rows on runs page and select `Compare` button to compare them
+
+<BrowserWindow>
+  <img src={require('./img/runs-to-diff.png').default} alt="Runs selection" />
+</BrowserWindow>
+
+You can access this page via `Run` -> `Compare` button
+
+<BrowserWindow>
+  <img src={require('./img/compare-button.png').default} alt="Compare button" />
+</BrowserWindow>
+
+## History
+
+You can now reset client side filters in history page
+
+:::info
+
+Sometimes client side filters _(click search)_ may not work as expected. In this case you can reset them by clicking on `Reset filters` button
+
+:::
+
+<BrowserWindow>
+  <img
+    src={require('./img/history-reset-filters.png').default}
+    alt="History charts"
+  />
+</BrowserWindow>
+
+<BrowserWindow>
+  <img src={require('./img/history-charts.png').default} alt="History charts" />
+</BrowserWindow>
+
+We've also added a new page mode for history where you can see values change over time
+
+<BrowserWindow>
+  <img src={require('./img/history-charts.png').default} alt="History charts" />
+</BrowserWindow>
+
+You can click on chart point to bring up modal with additional information as well as ability to jump directly to log/measurements/run
+
+<BrowserWindow>
+  <img
+    src={require('./img/history-chart-modal.png').default}
+    alt="History charts"
+  />
+</BrowserWindow>
+
+## New Datepicker
+
+We've added new datepicker component with better accessability and keyboard navigation
+
+<img src={require('./img/datepicker.png').default} alt="History charts" />
+
+<img
+  src={require('./img/date-range-picker.png').default}
+  alt="History charts"
+/>
+
+---
 
 ## Changelog
 
@@ -23,6 +105,7 @@ We are happy to announce **Bublik 0.1.1.**
 - feat(measurements): add suspended ui and skeleton for history measurements
 - feat(log): add skeleton loading to log tree
 - feat(help): add better error message when couldn't fetch revisions
+- feat(history): add reset client side filters button to history
 
 #### 🐛 Bug Fix
 
