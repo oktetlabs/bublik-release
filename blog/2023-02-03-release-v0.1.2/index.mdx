@@ -36,6 +36,12 @@ It works just like clicking refresh button
 
 ![Tab names](./img/tabs.png)
 
+## Details diff
+
+### Example diff
+
+![Details diff](./img/details-diff.png)
+
 ## Changelog
 
 ### Frontend
@@ -44,12 +50,15 @@ It works just like clicking refresh button
 
 - feat(history): add reset button to history global filter form
 - feat(history): add context menu to history linear/aggregation tables
-- feat(help): bake frontend revisions into deploy-info component
+- feat(help): bake frontend revisions into deploy-info component at build time
+- feat(dev): add events table with celery task status and links to logs/flower
+- feat(run-diff): [details] add diff for run info details
 
 #### 🐛 Bug Fix
 
 - fix(history): remove unnecessary requests if no test name is found
 - fix(history): failing to parse URL search params on some requests
+- fix(runs): add total percentage of expected runs
 - fix(run-diff): don't show suspence loading spinner for run-diff page
 - fix(dev): flower URL is incorrect in iframe
 - fix(ui): [datepickers] wrong order of date segments and wrong literals
@@ -59,7 +68,7 @@ It works just like clicking refresh button
 - style(history): add backdrop blur for dialogs
 - style(history): place duration in column to save some space
 - style(run): add empty state for run page
-- chore: moved dev section from sidebar to dev page
+- chore(sidebar): move flower/import/tests links under dev menu
 
 ---
 
