@@ -13,9 +13,13 @@ Added features, bugs and more!
 
 # Highlights
 
+### New icon for skipped tests
+
+![Log page tree skipped tests](./img/SCR-20230318-chrl.png)
+
 ### Added more data to import event table
 
-![Import page table](./img/SCR-20230317-hgzy.png)
+![Import page table](./img/SCR-20230318-cjpi.png)
 
 ### New form for importing multiple runs at once
 
@@ -29,9 +33,9 @@ Added features, bugs and more!
 
 #### 🚀 New Feature
 
-- feat(dashboard): expand nok result on link click for `unexpected`
-- feat(import): added form for importing multiple runs at once
-- feat(import): add filter by date to form
+- feat(dashboard): expand NOK result on link click for `unexpected`
+- feat(import): add form for importing multiple runs at once
+- feat(import): add filter by task id, error message, log url to form
 
 #### 🐛 Bug Fix
 
@@ -49,8 +53,16 @@ Added features, bugs and more!
 
 #### 🚀 New Feature
 
-#### 💾 DB changes
+- change the error message structure
+- add 'skipped' info to the iteration data forwarded to the UI
+- add new endpoint /v2/importruns/source to make imports from import status table
 
 #### 🐛 Bug Fix
 
+- runs import without logs
+- fix parsing and supporting result keys
+
 #### ✏️ Other
+
+- add facility, severity, timestamp and Error message to the import statuses table
+- add filtration by Celery task ID, Error message, Log URI to the import statuses table
