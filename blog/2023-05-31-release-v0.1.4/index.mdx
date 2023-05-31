@@ -1,0 +1,116 @@
+---
+title: Release v0.1.4
+authors: [ol-limonikas]
+tags: [release]
+slug: release-v0.1.4
+---
+
+We are happy to announce **Bublik v0.1.4**
+
+In this release we focused on more robust error experience, so you can have more context on what exactly went wrong.
+Also, we added more self-describing tab names, so you can easily find what you are looking for.
+
+<!--truncate-->
+
+# Highlights
+
+-
+-
+-
+
+## Changelog
+
+### Frontend
+
+#### 📝 Documentation
+
+- **config:** adjust docs to new build pipeline ([216af6a](https://github.com/oktetlabs/bublik-ui/commit/216af6a534f13152f33d3c18c5dc08eb5d9ae118))
+
+#### 👷‍ Build System
+
+- **size:** extract echarts chunk manulally to reduce size ([ba312fe](https://github.com/oktetlabs/bublik-ui/commit/ba312feb27f30d13c9120428c8bd1e8863d9fffd))
+- **vite:** add ability to specify remote JSON logs storage ([6f915d4](https://github.com/oktetlabs/bublik-ui/commit/6f915d456fd6272db145b8ad0f502d8583d08ab1))
+
+#### 🔧 Continuous Integration | CI
+
+- **build:** fix failing to parse passed args ([af3151e](https://github.com/oktetlabs/bublik-ui/commit/af3151ed8c9027664fd41efd4b3617593d41979c))
+- **build:** skip changelog for beta releases ([72801ed](https://github.com/oktetlabs/bublik-ui/commit/72801ed5183c806fa3ab9ba240e39807dc2f7104))
+
+#### ♻ Code Refactoring
+
+- **icon:** convert all icons to `.svg` ([#439](https://github.com/oktetlabs/bublik-ui/issues/439)) ([d056f89](https://github.com/oktetlabs/bublik-ui/commit/d056f89088ade06ca077a5ffa6d5dd93deaf83d8))
+- **run:** change displayed run columns ([1896f7e](https://github.com/oktetlabs/bublik-ui/commit/1896f7e3e86e25a80ea56d99114668e974d5cab7))
+- **ui:** replace all skeletons with component ([96b32ba](https://github.com/oktetlabs/bublik-ui/commit/96b32ba67c27819b61369e873c0d5d444c855da3))
+
+#### 🐛 Bug Fix
+
+- **history:** lazy loading modules ([5f9e6ed](https://github.com/oktetlabs/bublik-ui/commit/5f9e6ed05536bcdd191b82b7a05e2969680bbb7e))
+- **log:** [frame] not saving line number on subsequent navigations ([4e185aa](https://github.com/oktetlabs/bublik-ui/commit/4e185aa212943fb92559006608dbb48c84022ccc))
+- **runs:** date range picker no label warning ([4b9f05f](https://github.com/oktetlabs/bublik-ui/commit/4b9f05ff6290a05c4a37971bb4ec8fe58dbc4896))
+- **runs:** importing from lazy loaded module ([4c8fe1a](https://github.com/oktetlabs/bublik-ui/commit/4c8fe1a0b6ac5ba9c138eee8f758091dacc74f1a))
+
+#### 💅 Polish
+
+- **animation:** [dialog] add animation to dialog content ([cf17bf6](https://github.com/oktetlabs/bublik-ui/commit/cf17bf6e39219140708ffed005520132a69bde9e))
+- **changelog:** add confetti explosion on new release ([645202e](https://github.com/oktetlabs/bublik-ui/commit/645202e49be6d06918751fd7719df7347f449e12))
+- **history:** add animation to context menu ([3c7242e](https://github.com/oktetlabs/bublik-ui/commit/3c7242e14c8ff993dfe33dcd91b9e791ea44bd5b))
+- **history:** align reset buttons with close button ([4957228](https://github.com/oktetlabs/bublik-ui/commit/49572288a532c92263c784ee043d4cbcaf64474f))
+- **import:** fix overflow scrollbars ([16ffa15](https://github.com/oktetlabs/bublik-ui/commit/16ffa154207cab47b7a19e1b09bdbea6af1ba52e))
+- **import:** make modal title bigger ([bb84145](https://github.com/oktetlabs/bublik-ui/commit/bb841456abc5f2aebbfb5775c1358c782198ac4f))
+- **run:** [table] add group columns with border ([af37d1e](https://github.com/oktetlabs/bublik-ui/commit/af37d1e588a833642892869a86efa27370c7e108))
+- **run:** add background on row hover ([ed74c97](https://github.com/oktetlabs/bublik-ui/commit/ed74c97cfbd90d229327d4b294b6250d4507b607))
+- **run:** uppercase table columns ([abcf61b](https://github.com/oktetlabs/bublik-ui/commit/abcf61b78585f6a68301ecb7ce625d07fdf93f30))
+- **tooltip:** change shadow ([46e3238](https://github.com/oktetlabs/bublik-ui/commit/46e3238d7c3df2869fac9ae230e1d51d5a7eae95))
+
+#### 🚀 New Feature
+
+- **ci:** add changelog to the ui ([#434](https://github.com/oktetlabs/bublik-ui/issues/434)) ([a7109ff](https://github.com/oktetlabs/bublik-ui/commit/a7109ffd13e81a28b9966c9625fd8e75cdd8d1be))
+- **faq:** add latest tag info ([cbe7b4e](https://github.com/oktetlabs/bublik-ui/commit/cbe7b4e6b98845906c38030648f4b1a570f0d3b9))
+- **formatting:** convert formatting to use tabs ([4b348d1](https://github.com/oktetlabs/bublik-ui/commit/4b348d10816cccec47a1091bf6a0a4a48800a9ec))
+- **log:** add experimental support for JSON logs ([677fd29](https://github.com/oktetlabs/bublik-ui/commit/677fd29c11a550e7d59d9d4ff3b8b81ed0f3dae7))
+- **log:** add initial support for displaying log content ([d8ebcb1](https://github.com/oktetlabs/bublik-ui/commit/d8ebcb180a2b3d2dd86448f63ac3668a28488be8))
+- **log:** add pagination support to schema ([6a1af72](https://github.com/oktetlabs/bublik-ui/commit/6a1af728788b0828326215dc30de9f096b78a9be))
+- **log:** add pagination support to schema ([36706ae](https://github.com/oktetlabs/bublik-ui/commit/36706ae21021f73e96c327287bcc64795ad69403))
+- **run:** [results-table] add key list with urls ([83784ef](https://github.com/oktetlabs/bublik-ui/commit/83784ef337099e2176d3303ca148aedbcf39b7d7))
+- **run:** add column visibility toggle to run/diff pages ([ab0d28e](https://github.com/oktetlabs/bublik-ui/commit/ab0d28e4fa15380310e18801e0b3151eaf0d46cc))
+- **run:** add tooltips to details/toolbar buttons ([73c2bb5](https://github.com/oktetlabs/bublik-ui/commit/73c2bb562a4681dda4de7ac867a1db209a5e3161))
+- **sidebar:** add collapsible links ([1295902](https://github.com/oktetlabs/bublik-ui/commit/1295902aa48f55568f47a8948b632696f472f7ee))
+- **sidebar:** show/hide sidebar on `s` keypress ([ef529b8](https://github.com/oktetlabs/bublik-ui/commit/ef529b839c80850c5b33312d98f14aec4fc5b048))
+- **ui:** add dropdown menu component ([cea395f](https://github.com/oktetlabs/bublik-ui/commit/cea395feb7f1b9586f394e532da2b4de2947688e))
+- **ui:** add skeleton component ([cfd9b98](https://github.com/oktetlabs/bublik-ui/commit/cfd9b980e9cd80e72cca47ba02797776ea46e5d5))
+
+#### ⏪ Reverts
+
+- **log:** [frame] not saving line number on navigations ([f77e166](https://github.com/oktetlabs/bublik-ui/commit/f77e1662b5e8d1aa60fb40b789246d6efb96ea84))
+- **run:** rollback renaming column ids for run table ([ad334d5](https://github.com/oktetlabs/bublik-ui/commit/ad334d5057dd6d25b0d993ad6e88ef4c738da056))
+
+#### ✅ Tests
+
+- **ci:** fix lint command ([0bf7f43](https://github.com/oktetlabs/bublik-ui/commit/0bf7f435d4783069cc4a20e49a90766954c861ec))
+- **e2e:** add playwright support ([0ec5dfe](https://github.com/oktetlabs/bublik-ui/commit/0ec5dfe008f89e2e29d605e169c9d37d439f3cbd))
+- **history:** add some snapshot tests to history ([7aa7dba](https://github.com/oktetlabs/bublik-ui/commit/7aa7dbaf427626e3c7f15c76f02ddee16a9d35b6))
+- **import:** fix snapshot for overflow table ([a9d5360](https://github.com/oktetlabs/bublik-ui/commit/a9d5360c358eeb9e2e41529a657df88a1af97d61))
+- **import:** fix snapshot test for loading table state ([518a2e6](https://github.com/oktetlabs/bublik-ui/commit/518a2e6f4d8dd9c520bc51096cd302889d10d614))
+- **log:** remove build target from lib ([fe240a7](https://github.com/oktetlabs/bublik-ui/commit/fe240a746b67be7ba83313eb822d6ef7276e545b))
+- **run:** fix div instead of button when no url present ([63dfee6](https://github.com/oktetlabs/bublik-ui/commit/63dfee6702cd0f2e7a88c1c20ef433cfdad3035d))
+- **ui:** [clock] fix timezone issue in CI ([897a578](https://github.com/oktetlabs/bublik-ui/commit/897a578338aef8b2eeef1eed1b8d3024da79d10f))
+- **ui:** [icon] fix svgr not loading in vitest ([365b5e7](https://github.com/oktetlabs/bublik-ui/commit/365b5e7b9ad64e481f7b633b0beabe70955a5c6a))
+
+#### 📦 Chores
+
+- **build:** migrate from webpack to vite ([749a97b](https://github.com/oktetlabs/bublik-ui/commit/749a97bbc2a32f3084788588ba7e8cf69d23a9bf))
+- **build:** upgrade vite to v4.3 ([177fd89](https://github.com/oktetlabs/bublik-ui/commit/177fd89558e3edf0f4e603ccb2558a55e880d0a9))
+- **changelog:** [modal] disable modal until checkbox is ready ([ca82635](https://github.com/oktetlabs/bublik-ui/commit/ca826357194d39a25484f73c85740342535ba324))
+- **changelog:** lazy load changelog ([03d0276](https://github.com/oktetlabs/bublik-ui/commit/03d027675f827f431103667811f75fb7df0f8223))
+- **ci:** add new commit types ([13730fa](https://github.com/oktetlabs/bublik-ui/commit/13730fa92089d8738324269d0c341550e37efdf5))
+- **ci:** fix compare url ([eff2eb6](https://github.com/oktetlabs/bublik-ui/commit/eff2eb61ac759f3b3bdadb80506950549f1e3b71))
+- **ci:** update pipeline for manual releases ([425702d](https://github.com/oktetlabs/bublik-ui/commit/425702d8d94d8ad47da1a170199884bcab159b5c))
+- **deploy:** adjust api for new JSON format ([e4713a4](https://github.com/oktetlabs/bublik-ui/commit/e4713a4b50b93c4c002f9ddc4def97961a3c5313))
+- **env:** move all env configs to bublik app config ([e353093](https://github.com/oktetlabs/bublik-ui/commit/e353093e340777168df452685272b190460a9ad1))
+- **log:** add run id to tab title ([8c88283](https://github.com/oktetlabs/bublik-ui/commit/8c882830a9dffa486284f70d94d341259af65a54))
+- **log:** remove zod schema converting to JSON from production bundle ([24f2b3f](https://github.com/oktetlabs/bublik-ui/commit/24f2b3f8067ca62f8f8ead5038512329d4317a31))
+- **nx:** upgrade nx to 16.2.1 ([6184eaf](https://github.com/oktetlabs/bublik-ui/commit/6184eaf8a86c70cb85ed65e21c3bf36d9d57296c))
+- **release:** v0.16.0 ([8d0b1cd](https://github.com/oktetlabs/bublik-ui/commit/8d0b1cdfcd87215cee6c3b974d46c98d503a75af))
+- **test:** update snapshots ([4839df8](https://github.com/oktetlabs/bublik-ui/commit/4839df8d49476a26fdb251d8831fbae3b6f7c08d))
+
+### Backend
